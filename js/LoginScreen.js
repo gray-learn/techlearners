@@ -18,7 +18,7 @@ window.onload = function () {
 
 function goToHome()
 {
-  window.location.href = "../screens/HomeScreen.html";
+  window.location.href = "./index.html";
 }
 
 
