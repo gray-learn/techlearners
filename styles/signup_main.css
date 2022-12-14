@@ -3,14 +3,21 @@ body {
     margin: 0px;
     padding: 0px;
     /* background-color: #85FFBD; */
-    background-image: url('/image/login_bh.jpeg');
+    background-image: url('../assets/images/login_bh.jpeg');
     /* background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%); */
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  
 }
+
 /* for main section */
 main {
     width: 500px;
-    height: 685px;
+    height: 798px;
     margin: auto;
     border: 1px solid black;
     background-color: white;
@@ -23,7 +30,8 @@ main h2 {
     text-align: center;
     padding-top: 10px;
     margin-bottom: 0px;
-    /* padding-bottom: 10px; */
+    border-top: 1px solid;
+
 }
 
 .main-p {
@@ -295,4 +303,17 @@ main h2 {
 .gender-div-space {
     display: flex;
     justify-content: space-between;
+}
+
+.signup-logo-img {
+    width: 300px;
+    height: 100px;
+    margin-top: 25px;
+    margin-left: 25px;
+}
+
+#success {
+    background-color: rgb(127, 205, 127);
+    text-align: center;
+    font-size: 40px;
 }
