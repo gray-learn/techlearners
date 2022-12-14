@@ -11,7 +11,7 @@ Team Members :
 
 ## Parth Shah
 - HomeScreen 
-- LoginFile(HomePage.html)
+- LoginFile(index.html)
 - ProfileFile 
 
 ## Shyam Muari 
