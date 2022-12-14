@@ -24,21 +24,36 @@ function openHelpPage() {
 }
 
 
-// swet details programmatically from json on load the page
+let $ = (selector) => document.querySelector(selector);
 
-$().ready(function () {
-    $.getJSON('../json/profile.json', function (data) {
-      console.log(data);
+profile = {
+    email : "parthshah.ps921@gmail.com",
+    contact : "+1 437-424-5838",
+    gender : "Male",
+    dob: "02 Oct 1997",
+    address_1 : "12 garneau street,gihon spring drive ,ON, CA L4L1R1",
+    address_2 : "22 finch street martin grove Road ON, CA L3L0M1",
+    rewards : "You have 5$ joing rewards in your account",
+    newsletter_subscription : "No",
+    preferences : "SunGlasses, EyeGlasses, Lens"
+
+
+}
+
+
+// swet details programmatically from json on load the page
+window.onload = function () {
+ 
       // document.getElementById("email").innerHTML  = 
-      $('#email').append(data.email)
-      $('#contactNo').append(data.contact)
-      $('#gender').append(data.gender)
-      $('#dob').append(data.dob)
-      $('#address1').append(data.address_1)
-      $('#address2').append(data.address_2)
-      $('#rewards').append(data.rewards)
-      $('#newsletter_subscription').append(data.newsletter_subscription)
-      $('#preferences').append(data.preferences)
-    });
-  });
+      $('#email').append(profile.email)
+      $('#contactNo').append(profile.contact)
+      $('#gender').append(profile.gender)
+      $('#dob').append(profile.dob)
+      $('#address1').append(profile.address_1)
+      $('#address2').append(profile.address_2)
+      $('#rewards').append(profile.rewards)
+      $('#newsletter_subscription').append(profile.newsletter_subscription)
+      $('#preferences').append(profile.preferences)
+   
+}
 
