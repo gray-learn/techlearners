@@ -3,9 +3,8 @@ let $ = (selector) => document.querySelector(selector);
 
 var modal = document.getElementById('id01');
 
+// on window load giving validate details function
 window.onload = function () {
-
-  
   $('#login').onclick = loginValidate;
   $('#eye').onclick = passwordVisible;
   $('#email').onchange = valuesChange;
@@ -16,13 +15,14 @@ window.onload = function () {
   }
 };
 
+// go to home
 function goToHome()
 {
   window.location.href = "../index.html";
 }
 
 
-
+// handle signinbutton opacity
 function valuesChange()
 {
   let emailValFlag = emailValidate();
@@ -32,17 +32,13 @@ function valuesChange()
   }
 }
 
+// handle password toggle
 function passwordVisible(){
- 
   this.classList.toggle("fa-eye-slash")
   const type = $('#password').getAttribute("type") === "password" ? "text" : "password"
   $('#password').setAttribute("type", type)
 }
                     
-
-
-
-
   function loginValidate(e) {
 
     e.preventDefault();
@@ -63,7 +59,6 @@ function passwordVisible(){
     }else{
     
     }
-
 }
 
 

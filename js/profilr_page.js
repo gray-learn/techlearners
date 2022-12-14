@@ -24,7 +24,7 @@ function openHelpPage() {
 }
 
 
-
+// swet details programmatically from json on load the page
 
 $().ready(function () {
     $.getJSON('../json/profile.json', function (data) {

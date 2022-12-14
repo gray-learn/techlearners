@@ -37,10 +37,9 @@ let itemList = [
 
 ]
 
+// setting details on run-time
 
 window.onload = function () {
-
- 
       let container = document.getElementById('mainbox');
       let items = "";
      
@@ -62,14 +61,12 @@ window.onload = function () {
           </div>
         </div>
       </div>`   
-      }
-   
+      }  
       // container.innerHTML = items;
-      
-
 }
 
 
+// Handling events of click buttons
 
 function openForm() {
   document.getElementById("myForm").style.display = "block";
@@ -95,7 +92,7 @@ function openHelpPage() {
   window.location.href = "../screens/aboutus.html";
 }
 
-
+// open image click zoom model
 
 function openModal() {
   document.getElementById("myModal").style.display = "block";
@@ -130,15 +127,12 @@ function ChangeImages(direction) {
   ImageNumber = ImageNumber + direction;
 
   if (ImageNumber > difference) {
-    //begin inner first if
     ImageNumber = 0;
-  } //end inner first if
+  } 
 
   if (ImageNumber < 0) {
-    //begin inner second if
     ImageNumber = difference;
-  } //end inner second if
-  //document.slideshow.src = myImagesArray[ImageNumber];
+  } 
   document.getElementById('slideshow').src = myImagesArray[ImageNumber];
 } //end function
 
@@ -155,6 +149,7 @@ function currentSlide(n) {
   showSlides(slideIndex = n);
 }
 
+// show ads slides
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
@@ -174,14 +169,13 @@ function showSlides(n) {
 }
 
 
+// change images of wishlist
 function changeImage() {
-
   if (document.getElementById("wishList").src == "http://127.0.0.1:5501/assets/images/wishlist.png") {
     document.getElementById("wishList").src = "http://127.0.0.1:5501/assets/images/filled_wishlist.png";
   } else {
     document.getElementById("wishList").src = "http://127.0.0.1:5501/assets/images/wishlist.png";
   }
-
 }
 
 
